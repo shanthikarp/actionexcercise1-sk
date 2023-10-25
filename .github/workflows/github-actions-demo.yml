@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: 
-          echo " print github context information ${{toJSon(github)}}"
-          echo "print runner context information ${{toJSon(runner)}}"
+          echo " print github context information ${{toJSON(github)}}"
+          echo "print runner context information ${{toJSON(runner)}}"
       - run: |
          echo " the job event ${{github.event_name}}"
          echo " the repo branch ${{github.ref}}"

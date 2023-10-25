@@ -13,11 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: github context variables
-      - run:
-      
-          echo " print github context information ${{toJSON(github)}}"
+        run: |
+           echo " print github context information ${{toJSON(github)}}"
       - name: runner context variables
-      - run:
+        run: |
       
           echo " print github context information ${{toJSON(runner)}}"
           
